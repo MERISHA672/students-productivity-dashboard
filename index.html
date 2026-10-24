@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>StudyFlow</h1>
+
+    <button id="themeBtn">🌙</button>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div>
+        <p class="small-text">STUDENT PRODUCTIVITY</p>
+        <h2>Stay focused.<br>Learn smarter.</h2>
+        <p>
+          Organize your assignments, track your progress,
+          and build better study habits.
+        </p>
+      </div>
+
+      <div class="progress-circle">
+        <span id="progress">0%</span>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span>📚</span>
+        <h3 id="totalTasks">0</h3>
+        <p>Total Tasks</p>
+      </div>
+
+      <div class="stat-card">
+        <span>✅</span>
+        <h3 id="completedTasks">0</h3>
+        <p>Completed</p>
+      </div>
+
+      <div class="stat-card">
+        <span>⏳</span>
+        <h3 id="remainingTasks">0</h3>
+        <p>Remaining</p>
+      </div>
+    </section>
+
+    <section class="task-section">
+
+      <div class="section-header">
+        <div>
+          <h2>My Study Tasks</h2>
+          <p>Manage your academic work</p>
+        </div>
+      </div>
+
+      <form id="taskForm">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new study task..."
+          required
+        >
+
+        <select id="priority">
+          <option value="High">High</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="Low">Low</option>
+        </select>
+
+        <button type="submit">Add Task</button>
+      </form>
+
+      <div id="taskList"></div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Built with HTML, CSS & JavaScript • Student Developer Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
